@@ -1,0 +1,13 @@
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-5xl font-black">Search for "{{ get:q }}"</h1>
+    {{ search:results as="results"}}
+    {{if results}}
+    <ul class="space-y-4">
+        {{results}}
+        <li><a href="{{ url }}" autofocus class="font-bold hover:text-red-500 ">{{title}}</a>
+        </li>
+        {{/results}}
+    </ul>
+    {{/if}}
+    {{ /search:results}}
+</div>

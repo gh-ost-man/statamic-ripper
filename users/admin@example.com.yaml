@@ -1,0 +1,22 @@
+name: 'Ripper Admin'
+super: true
+avatar: 9.jpg
+id: 6d52901e-dccb-4cbf-b8bb-9e54ece156d8
+password_hash: $2y$10$2o0f6VeUWSJNrvtIGuR1keWKskSxiftIrQISeXDNYZ5s6qXWHhuH.
+preferences:
+  collections:
+    pages:
+      after_save: create_another
+    blog:
+      after_save: continue_editing
+      columns:
+        - title
+        - slug
+        - date
+        - status
+        - author
+  taxonomies:
+    tags:
+      columns:
+        - title
+        - slug
