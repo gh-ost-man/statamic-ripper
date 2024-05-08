@@ -10,11 +10,11 @@ preferences:
     blog:
       after_save: continue_editing
       columns:
-        - title
-        - slug
         - date
         - status
         - author
+        - title
+        - feature_image
   taxonomies:
     tags:
       columns:
