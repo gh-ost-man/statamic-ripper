@@ -151,5 +151,5 @@ return [
     */
 
     'update_references' => true,
-
+    'use_https' => true
 ];
