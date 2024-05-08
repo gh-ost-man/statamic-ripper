@@ -17,7 +17,7 @@ tabs:
             field:
               max_files: 1
               mode: list
-              container: statamic-new-store
+              container: assets
               restrict: false
               allow_uploads: true
               show_filename: true
@@ -146,11 +146,3 @@ tabs:
               default: now
               validate:
                 - required
-          -
-            handle: tags
-            field:
-              type: terms
-              taxonomies:
-                - tags
-              display: Tags
-              mode: select
